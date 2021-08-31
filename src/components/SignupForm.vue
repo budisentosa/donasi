@@ -1,21 +1,51 @@
 <template>
   <form @submit.prevent="handleSubmit">
     <input
-      class="border-1 mt-3 focus: outline-none focus:ring-2 focus:ring-yellow-700 py-2 px-3"
+      class="
+        border-1
+        mt-3
+        text-lg
+        font-semibold
+        focus:
+        outline-none
+        focus:ring-2 focus:ring-yellow-700
+        py-2
+        px-3
+      "
       type="text"
       required
       placeholder="Nama"
       v-model="displayName"
     />
     <input
-      class="border-1 mt-3 focus: outline-none focus:ring-2 focus:ring-yellow-700 py-2 px-3"
+      class="
+        border-1
+        mt-3
+        text-lg
+        font-semibold
+        focus:
+        outline-none
+        focus:ring-2 focus:ring-yellow-700
+        py-2
+        px-3
+      "
       type="email"
       required
       placeholder="email"
       v-model="email"
     />
     <input
-      class="border-1 mt-3 focus: outline-none focus:ring-2 focus:ring-yellow-700 py-2 px-3"
+      class="
+        border-1
+        mt-3
+        text-lg
+        font-semibold
+        focus:
+        outline-none
+        focus:ring-2 focus:ring-yellow-700
+        py-2
+        px-3
+      "
       type="password"
       required
       placeholder="password"
@@ -23,7 +53,24 @@
     />
     <div class="error">{{ error }}</div>
     <button
-      class="mt-12 w-full max-w-lg py-2 px-3 focus:outline-none focus:bg-yellow-800 rounded-none bg-yellow-600 text-lg font-semibold shadow-lg transform hover:-translate-y-1 ease-in-out duration-700"
+      class="
+        mt-12
+        w-3/4
+        rounded
+        max-w-lg
+        py-2
+        px-3
+        focus:outline-none
+        focus:bg-yellow-800
+        bg-yellow-600
+        text-lg
+        font-semibold
+        shadow-lg
+        transform
+        hover:-translate-y-1
+        ease-in-out
+        duration-300
+      "
     >
       Sign up
     </button>
@@ -31,6 +78,7 @@
 </template>
 
 <script>
+
 import { ref } from "vue";
 import useSignup from "../composables/useSignup";
 
@@ -55,3 +103,5 @@ export default {
 </script>
 
 <style></style>
+
+
